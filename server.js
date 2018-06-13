@@ -35,7 +35,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.get('/', (req, res) => {
-    res.send(database.users);
+    res.send('it is working.. trust..');
 })
 
 //signin
@@ -51,7 +51,7 @@ app.get('/profile/:id', profile.handleProfileGet(db));
 app.put('/image', image.handleImage(db));
 
 //imageurl
-app.post('/imageurl', (req, res) => { image.handleApiCal(req, res)});
+app.post('/imageurl', (req, res) => { image.handleApiCall(req, res)});
 
 
 //password hashing 
