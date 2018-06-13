@@ -69,8 +69,9 @@ bcrypt.hash("bacon", null, null, function(err, hash) {
 
 
 //initiate port listening
-app.listen(3000, () => {
-    console.log('app is running on port 3000');
+const PORT = process.env.PORT;
+app.listen(PORT || 3000, () => {
+    console.log(`app is running on port ${PORT}`);
 })
 
 
