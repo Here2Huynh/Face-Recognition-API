@@ -1,0 +1,6 @@
+Adding validation
+-validation in front end 
+-validation in the back end 
+
+-all inputs outside of itself is always valdiated 
+
